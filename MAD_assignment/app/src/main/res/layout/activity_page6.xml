@@ -8,6 +8,19 @@
     android:background="@drawable/background">
 
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="89dp"
+        android:layout_height="82dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097" />
+
     <TextView
         android:id="@+id/textView75"
         android:layout_width="440dp"
@@ -20,7 +33,19 @@
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.443" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="426dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="564dp"
+        android:background="@drawable/table_radius6"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -128,24 +153,11 @@
         android:layout_marginBottom="416dp"
         android:fontFamily="@font/roboto_black"
         android:text="My Bike Details"
-        android:textColor="@color/fontblack"
+        android:textColor="@color/colorPrimary"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="376dp"
-        android:fontFamily="@font/roboto_black"
-        android:text=" Honda Hornet 250"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -155,7 +167,7 @@
         android:layout_marginBottom="340dp"
         android:fontFamily="@font/roboto_black"
         android:text="Reg No:"
-        android:textColor="@color/fontblack2"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.096"
@@ -168,7 +180,7 @@
         android:layout_marginBottom="304dp"
         android:fontFamily="@font/roboto_black"
         android:text="Registration No:"
-        android:textColor="@color/fontblack2"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
@@ -292,12 +304,62 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="84dp"
+        android:layout_width="89dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/custom_button2"
         android:text="Review"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="131dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_black"
+        android:inputType="textPersonName"
+        android:text="Bike name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <EditText
+        android:id="@+id/editTextTextregno"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_black"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <EditText
+        android:id="@+id/editTextTextregistrationno"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_black"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
