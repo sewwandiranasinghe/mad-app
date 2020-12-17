@@ -14,7 +14,7 @@
         android:layout_marginTop="208dp"
         android:background="@drawable/table_radius2"
         android:fontFamily="@font/roboto_bold"
-        android:textColor="@color/blue1"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

@@ -4,14 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".about_us"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    tools:context=".about_us">
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/table_radius2"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
     <TextView
         android:id="@+id/textView30"
-        android:layout_width="382dp"
-        android:layout_height="122dp"
+        android:layout_width="297dp"
+        android:layout_height="204dp"
+        android:fontFamily="@font/roboto_black"
         android:text="Brass Wings is a bike Servicing Station  located at the heart of Colombo. We offer  24 hours service with free  pickup and drop ensuring convenience to our customers. All our services are  brought to you by our professional mechanics.  you can  make  an appointment  over  the phone or online. "
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="279dp" />
+        android:textColor="@color/fontblack2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="169dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.968"
+        app:srcCompat="@drawable/logosecond" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="187dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967"
+        app:srcCompat="@drawable/logofirst" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="133dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="About us"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
 </androidx.constraintlayout.widget.ConstraintLayout>
