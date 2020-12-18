@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class page7 extends AppCompatActivity {
+public class Activity_Billingdetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_page7);
+        setContentView(R.layout.activity_billingdetails);
+
+        this.setTitle("Billing Details");
+
     }
 }

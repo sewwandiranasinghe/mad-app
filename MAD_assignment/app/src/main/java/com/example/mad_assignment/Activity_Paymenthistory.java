@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class page14 extends AppCompatActivity {
+public class Activity_Paymenthistory extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_page14);
+        setContentView(R.layout.activity_paymenthistory);
     }
 }

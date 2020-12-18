@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".page4"></activity>
+        <activity android:name=".Activity_Easypickup"></activity>
         <activity android:name=".about_us" />
-        <activity android:name=".page2" />
-        <activity android:name=".page3" />
-        <activity android:name=".page7" />
-        <activity android:name=".page6" />
-        <activity android:name=".firstpage">
+        <activity android:name=".Activity_Login" />
+        <activity android:name=".Activity_Signup" />
+        <activity android:name=".Activity_Services" />
+        <activity android:name=".Activity_Myprofile" />
+        <activity android:name=".Activity_Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,12 +23,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".lastpage" />
-        <activity android:name=".page14" />
-        <activity android:name=".page12" />
-        <activity android:name=".page11" />
-        <activity android:name=".page10" />
-        <activity android:name=".page9" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity_Payorders" />
+        <activity android:name=".Activity_Orders" />
+        <activity android:name=".Activity_Paymenthistory" />
+        <activity android:name=".Activity_Paymentsummary_Cash" />
+        <activity android:name=".Activity_Paymentsummary" />
+        <activity android:name=".Activity_Billingdetails">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
