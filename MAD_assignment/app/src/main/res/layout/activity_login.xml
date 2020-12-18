@@ -17,6 +17,7 @@
         android:shadowColor="#FFFFFF"
         android:text=" Sign In"
         android:textColor="#ffffff"
+        android:onClick="LoginBtnOnClicl"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -25,7 +26,7 @@
         app:layout_constraintVertical_bias="0.624" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/passwordtx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -42,7 +43,7 @@
         app:layout_constraintVertical_bias="0.501" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/phonetx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

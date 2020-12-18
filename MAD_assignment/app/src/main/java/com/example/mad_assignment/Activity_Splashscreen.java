@@ -14,7 +14,7 @@ public class Activity_Splashscreen extends AppCompatActivity {
         Thread thread = new Thread() {
 
             @Override
-            public void run() {try {sleep(1000);
+            public void run() {try {sleep(2000);
                 Intent intent = new Intent(getApplicationContext(), Activity_Login.class);
                 startActivity(intent);
                 finish();
