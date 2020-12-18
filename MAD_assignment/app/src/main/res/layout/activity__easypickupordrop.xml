@@ -4,13 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< Updated upstream:MAD_assignment/app/src/main/res/layout/activity_easypickup.xml
-    android:background="@drawable/background3"
-    tools:context=".Activity_Easypickup">
-=======
-    tools:context=".easypickupand_drop"
-    android:background="@drawable/background3">
->>>>>>> Stashed changes:MAD_assignment/app/src/main/res/layout/activity_easypickupand_drop.xml
+    tools:context=".Activity_Easypickupordrop">
+
 
     <TextView
         android:id="@+id/textView65"
@@ -23,7 +18,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        
+        />
 
     <TextView
         android:id="@+id/textView66"
@@ -367,5 +364,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.871"
         app:srcCompat="@drawable/p8" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
