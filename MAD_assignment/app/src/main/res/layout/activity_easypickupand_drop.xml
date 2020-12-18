@@ -4,13 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< Updated upstream:MAD_assignment/app/src/main/res/layout/activity_easypickup.xml
     android:background="@drawable/background3"
-    tools:context=".Activity_Easypickup">
-=======
-    tools:context=".easypickupand_drop"
-    android:background="@drawable/background3">
->>>>>>> Stashed changes:MAD_assignment/app/src/main/res/layout/activity_easypickupand_drop.xml
+    tools:context=".activity_easypickupand_drop">
+
 
     <TextView
         android:id="@+id/textView65"
