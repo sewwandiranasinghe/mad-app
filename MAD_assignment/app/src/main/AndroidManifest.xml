@@ -12,15 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <activity android:name=".Activity_Easypickupordrop"></activity>
-=======
-=======
->>>>>>> cdfda17097241af37867b34d41b316c690fbc08b
+
+
         <activity android:name=".Activity_Easy"></activity>
-        <activity android:name=".easypickupand_drop" />
->>>>>>> cdfda17097241af37867b34d41b316c690fbc08b
         <activity android:name=".about_us" />
         <activity android:name=".Activity_Login" />
         <activity android:name=".Activity_Signup" />
