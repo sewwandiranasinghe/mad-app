@@ -45,8 +45,8 @@ public class Activity_Login_Background extends AsyncTask<String, Void, String> {
 //        super.onPostExecute(s);
         System.out.println(result);
         progressDialog.dismiss();
-        if(result.equals("login Success")){
-            Intent i = new Intent(context,Activity_Easypickup.class);
+        if(result.equals("login success")){
+            Intent i = new Intent(context,Activity_Myprofile.class);
             context.startActivity(i);
         }
         else{
@@ -60,12 +60,14 @@ public class Activity_Login_Background extends AsyncTask<String, Void, String> {
 
     @Override
     protected String doInBackground(String... strings) {
+        //
         phoneNumber = strings[0];
         password = strings[1];
         String result = "";
+        //
         try {
             //Connection to the php setup
-            String LOGIN_URL = "http://192.168.1.100/testapp/login.php";
+            String LOGIN_URL = "http://192.168.1.100/testapp/userlogin.php";
             URL url = new URL(LOGIN_URL);
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setRequestMethod("POST");
@@ -75,10 +77,10 @@ public class Activity_Login_Background extends AsyncTask<String, Void, String> {
             // data to be output to the php
             OutputStream outputStream = httpURLConnection.getOutputStream();
             BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-
+//
             String Data = URLEncoder.encode("phoneNumber", "UTF-8") + "=" + URLEncoder.encode(phoneNumber, "UTF-8") + "&&"
                     + URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
-
+//
             bufferedWriter.write(Data);
             bufferedWriter.flush();
 

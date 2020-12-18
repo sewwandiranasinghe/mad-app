@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Easypickup"
-    android:background="@drawable/background3">
+    android:background="@drawable/background3"
+    tools:context=".Activity_Easypickup">
 
     <TextView
         android:id="@+id/textView65"
