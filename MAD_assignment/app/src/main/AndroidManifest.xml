@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_Easypickup"></activity>
+        <activity android:name=".easypickupand_drop"></activity>
         <activity android:name=".about_us" />
         <activity android:name=".Activity_Login" />
         <activity android:name=".Activity_Signup" />
