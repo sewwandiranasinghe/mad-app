@@ -37,7 +37,7 @@ public class Activity_Login_Background extends AsyncTask<String, Void, String> {
         progressDialog.setTitle("Login");
 
         alertDialog = new AlertDialog.Builder(context).create();
-        alertDialog.setTitle("Invalid");
+        alertDialog.setTitle("Invalid Mobile No or Password");
     }
 
     @Override
@@ -46,7 +46,7 @@ public class Activity_Login_Background extends AsyncTask<String, Void, String> {
         System.out.println(result);
         progressDialog.dismiss();
         if(result.equals("login success")){
-            Intent i = new Intent(context,Activity_Myprofile.class);
+            Intent i = new Intent(context,Activity_Payorders.class);
             context.startActivity(i);
         }
         else{

@@ -34,5 +34,7 @@ public class Activity_Login extends AppCompatActivity {
 
         Activity_Login_Background loginBackground = new Activity_Login_Background(this);
         loginBackground.execute(phoneNumber, password);
+
     }
+  
 }
