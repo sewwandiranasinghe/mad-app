@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Activity_Easypickupordrop extends AppCompatActivity {
+public class Activity_Easy extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity__easypickupordrop);
+        setContentView(R.layout.activity__easy);
     }
 }
