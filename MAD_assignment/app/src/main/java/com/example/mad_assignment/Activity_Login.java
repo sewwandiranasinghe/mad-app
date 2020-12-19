@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -36,5 +37,11 @@ public class Activity_Login extends AppCompatActivity {
         loginBackground.execute(phoneNumber, password);
 
     }
-  
+
+
+
+    public void onSignInClick(View view) {
+        Intent intent = new Intent(Activity_Login.this, Activity_Signup.class);
+        startActivity(intent);
+    }
 }

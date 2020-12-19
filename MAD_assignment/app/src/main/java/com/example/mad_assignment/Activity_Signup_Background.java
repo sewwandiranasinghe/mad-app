@@ -1,6 +1,24 @@
 package com.example.mad_assignment;
 
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.AsyncTask;
+import android.widget.LinearLayout;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLEncoder;
 
 public class Activity_Signup_Background extends AsyncTask<String, Void, String> {
     Context context;
@@ -25,7 +43,7 @@ public class Activity_Signup_Background extends AsyncTask<String, Void, String> 
         String password=strings[3];
 
         String result="";
-        if(type.equals("reg")) {
+
             try {
                 String connect ="http://"+IP_ADDREDS+"/finepay/usersignup.php";
                 URL url = new URL(connect);
@@ -62,7 +80,7 @@ public class Activity_Signup_Background extends AsyncTask<String, Void, String> 
             } catch (IOException e) {
                 result = e.getMessage();
             }
-        }
+
         return result;
     }
 
@@ -72,12 +90,12 @@ public class Activity_Signup_Background extends AsyncTask<String, Void, String> 
         progressDialog = ProgressDialog.show(context, "ProgressDialog", "Please Wait");
         progressDialog.setTitle("Registering");
         progressDialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT);
-        progressDialog.getWindow().setBackgroundDrawableResource(R.drawable.white_button);
-        alertDialog = new AlertDialog.Builder(context).create();
-        alertDialog.setTitle("");
-        alertDialog.setIcon(R.drawable.error_alertbox_icon);
-        alertDialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT);
-        alertDialog.getWindow().setBackgroundDrawableResource(R.drawable.white_button);
+  //      progressDialog.getWindow().setBackgroundDrawableResource(R.drawable.white_button);
+//        alertDialog = new AlertDialog.Builder(context).create();
+//        alertDialog.setTitle("");
+//        alertDialog.setIcon(R.drawable.error_alertbox_icon);
+//        alertDialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT);
+//        alertDialog.getWindow().setBackgroundDrawableResource(R.drawable.white_button);
     }
 
     @Override
@@ -87,22 +105,22 @@ public class Activity_Signup_Background extends AsyncTask<String, Void, String> 
 
         if(res.equals("Register Complete")){
 
-            final androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(context,R.style.CustomAlertDialog);
+            final androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(context);
             builder.setTitle("");
             builder.setMessage(result);
             builder.setCancelable(false);
-            builder.setPositiveButton(R.string.confirm_box_ok, new DialogInterface.OnClickListener() {
+            builder.setPositiveButton(R.string.app_name, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    Intent intent= new Intent(context,MainActivity.class);
+                    Intent intent= new Intent(context,Activity_Splashscreen.class);
                     context.startActivity(intent);
                 }
             });
             builder.show();
         }
         else{
-            alertDialog.setMessage(result);
-            alertDialog.show();
+//            alertDialog.setMessage(result);
+//            alertDialog.show();
         }
     }
 }

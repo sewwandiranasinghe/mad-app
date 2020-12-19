@@ -101,6 +101,7 @@
         android:fontFamily="@font/roboto_black"
         android:text="Sign Up"
         android:textColor="@color/colorPrimary"
+        android:onClick="onSignUpClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

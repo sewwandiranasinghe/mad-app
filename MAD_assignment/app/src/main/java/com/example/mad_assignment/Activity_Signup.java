@@ -3,7 +3,9 @@ package com.example.mad_assignment;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
@@ -34,9 +36,9 @@ public class Activity_Signup extends AppCompatActivity {
 
 
     public void back_btn(View view) {
-        Intent intent = new Intent(Activity_Signup.this, MainActivity.class);
+        Intent intent = new Intent(Activity_Signup.this, Activity_Splashscreen.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.slide_up, R.anim.fade_out);
+//        overridePendingTransition(R.anim.slide_up, R.anim.fade_out);
     }
 
     public void signup(View view) {
@@ -50,7 +52,7 @@ public class Activity_Signup extends AppCompatActivity {
 
 
         /** Error Message Icon **/
-        Drawable warning = (Drawable)getResources().getDrawable(R.drawable.signup_error_icon);
+        Drawable warning = (Drawable)getResources().getDrawable(R.drawable.button_arrow);
         warning.setBounds(0, 0, warning.getIntrinsicWidth(), warning.getIntrinsicHeight());
 
         /** Validating Fields **/
@@ -74,8 +76,8 @@ public class Activity_Signup extends AppCompatActivity {
 
 
 
-            Activity_Signup_Background activity_signup_background  = new activity_signup_background(this);
-            activity_signup_background.execute(fullname,address,MobileNo,password);
+//            Activity_Signup_Background activity_signup_background  = new activity_signup_background(this);
+//            activity_signup_background.execute(fullname,address,MobileNo,password);
 
         }
 
@@ -83,11 +85,8 @@ public class Activity_Signup extends AppCompatActivity {
     }
 
 
-
-
-
-
-
-
-
+    public void onSignUpClick(View view) {
+        Intent intent = new Intent(Activity_Signup.this, Activity_Login.class);
+        startActivity(intent);
+    }
 }
