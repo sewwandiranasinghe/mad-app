@@ -28,4 +28,30 @@ public class Activity_Easy extends AppCompatActivity {
         Intent intent = new Intent(Activity_Easy.this, Activity_Billingdetails.class);
         startActivity(intent);
     }
+
+    public void detailcheckupbutton(View view) {
+        Intent intent = new Intent(Activity_Easy.this, Activity_Billingdetails.class);
+        startActivity(intent);
+    }
+
+    public void ordersparebutton(View view) {
+        Intent intent = new Intent(Activity_Easy.this, Activity_Billingdetails.class);
+        startActivity(intent);
+
+    }
+
+    public void trackbikebutton(View view) {
+        Intent intent = new Intent(Activity_Easy.this, Activity_Billingdetails.class);
+        startActivity(intent);
+    }
+
+    public void paymentorderbutton(View view) {
+        Intent intent = new Intent(Activity_Easy.this, Activity_Billingdetails.class);
+        startActivity(intent);
+    }
+
+    public void freedropbutton(View view) {
+        Intent intent = new Intent(Activity_Easy.this, Activity_Billingdetails.class);
+        startActivity(intent);
+    }
 }
