@@ -9,23 +9,23 @@
 
     <TextView
         android:id="@+id/textView65"
-        android:layout_width="494dp"
-        android:layout_height="250dp"
+        android:layout_width="490dp"
+        android:layout_height="400dp"
         android:background="@drawable/table_radius"
         android:fontFamily="@font/roboto_bold"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintVertical_bias="0.22" />
 
     <EditText
         android:id="@+id/fullnametx"
         android:layout_width="336dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="488dp"
+        android:layout_marginBottom="548dp"
         android:ems="10"
         android:fontFamily="@font/roboto_black"
         android:inputType="textPersonName"
@@ -33,18 +33,18 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/addresstx"
+        android:id="@+id/bikename"
         android:layout_width="336dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="424dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="372dp"
         android:ems="10"
         android:fontFamily="@font/roboto_black"
         android:inputType="textPersonName"
-        android:text="Address"
+        android:text="Bike Name"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,15 +52,60 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
+        android:id="@+id/bikrmodel"
+        android:layout_width="336dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="320dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_black"
+        android:inputType="textPersonName"
+        android:text="Bike Model"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/registrationno"
+        android:layout_width="336dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="268dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_black"
+        android:inputType="textPersonName"
+        android:text="Registration No"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addresstx"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="492dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_black"
+        android:inputType="textPersonName"
+        android:text="Address"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
         android:id="@+id/mobilenotx"
         android:layout_width="336dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="360dp"
+        android:layout_marginBottom="428dp"
         android:ems="10"
+        android:fontFamily="@font/roboto_black"
         android:inputType="phone"
         android:text="Mobile Number"
         android:textSize="18sp"
-        android:fontFamily="@font/roboto_black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -70,27 +115,28 @@
         android:id="@+id/passtx"
         android:layout_width="332dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="296dp"
+        android:layout_marginBottom="216dp"
         android:ems="10"
         android:fontFamily="@font/roboto_black"
         android:inputType="textPassword"
         android:text="Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="335dp"
         android:layout_height="67dp"
-        android:layout_marginBottom="192dp"
+        android:layout_marginBottom="116dp"
         android:fontFamily="@font/roboto_black"
         android:text="By clicking sign up,you agree to our terms and Data Policy.You may receive SMS notifications from us and can opt. out at anytime.       "
         android:textColor="@color/fontblack2"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -99,14 +145,14 @@
         android:layout_height="48dp"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/roboto_black"
+        android:onClick="onSignUpClick"
         android:text="Sign Up"
         android:textColor="@color/colorPrimary"
-        android:onClick="onSignUpClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
+        app:layout_constraintVertical_bias="0.931" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

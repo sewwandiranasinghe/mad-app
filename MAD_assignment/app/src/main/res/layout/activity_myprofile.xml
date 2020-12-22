@@ -33,7 +33,7 @@
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintVertical_bias="0.441" />
 
     <TextView
         android:id="@+id/textView76"
@@ -122,27 +122,13 @@
         android:id="@+id/button9"
         android:layout_width="90dp"
         android:layout_height="30dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="148dp"
         android:background="@drawable/custom_button2"
         android:fontFamily="@font/roboto_black"
-        android:text="My bike"
+        android:text="Edit profile"
         android:textColor="@color/fontblack2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="90dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="168dp"
-        android:background="@drawable/custom_button2"
-        android:fontFamily="@font/roboto_black"
-        android:text="My address"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -166,7 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="340dp"
         android:fontFamily="@font/roboto_black"
-        android:text="Reg No:"
+        android:text="Model:"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -186,127 +172,11 @@
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="220dp"
-        android:fontFamily="@font/roboto_black"
-        android:text="Insurance"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="220dp"
-        android:fontFamily="@font/roboto_black"
-        android:text="PVC"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="220dp"
-        android:fontFamily="@font/roboto_black"
-        android:text="RC"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="188dp"
-        android:fontFamily="@font/roboto_black"
-        android:text="Exp"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="160dp"
-        android:fontFamily="@font/roboto_black"
-        android:text=" 30 Sep 2020"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="188dp"
-        android:fontFamily="@font/roboto_black"
-        android:text="Exp"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="188dp"
-        android:fontFamily="@font/roboto_black"
-        android:text="Exp"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="160dp"
-        android:fontFamily="@font/roboto_black"
-        android:text="30 Sep 2020"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="160dp"
-        android:fontFamily="@font/roboto_black"
-        android:text="30 Sep 2020"
-        android:textColor="@color/fontblack2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <Button
         android:id="@+id/button4"
         android:layout_width="89dp"
         android:layout_height="42dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="140dp"
         android:background="@drawable/custom_button2"
         android:text="Review"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -331,7 +201,7 @@
         app:layout_constraintVertical_bias="0.404" />
 
     <EditText
-        android:id="@+id/editTextTextregno"
+        android:id="@+id/editTextTextmodel"
         android:layout_width="136dp"
         android:layout_height="36dp"
         android:ems="10"
@@ -345,6 +215,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.465" />
+
+    <EditText
+        android:id="@+id/editTextTextbilename"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_black"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
 
     <EditText
         android:id="@+id/editTextTextregistrationno"
