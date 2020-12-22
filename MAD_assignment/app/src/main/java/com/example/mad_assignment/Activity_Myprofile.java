@@ -18,4 +18,9 @@ public class Activity_Myprofile extends AppCompatActivity {
         Intent intent = new Intent(Activity_Myprofile.this, Activity_Licencereview.class);
         startActivity(intent);
     }
+
+    public void editprofilebutton(View view) {
+        Intent intent = new Intent(Activity_Myprofile.this, Activity_Myproedit.class);
+        startActivity(intent);
+    }
 }
