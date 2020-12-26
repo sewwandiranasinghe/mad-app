@@ -46,7 +46,7 @@ public class Activity_Login_Background extends AsyncTask<String, Void, String> {
         System.out.println(result);
         progressDialog.dismiss();
         if(result.equals("login success")){
-            Intent i = new Intent(context,Activity_Payorders.class);
+            Intent i = new Intent(context,Activity_Easy.class);
             context.startActivity(i);
         }
         else{
