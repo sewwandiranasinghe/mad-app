@@ -9,13 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView20"
-        android:layout_width="221dp"
-        android:layout_height="230dp"
+        android:layout_width="207dp"
+        android:layout_height="203dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414"
+        app:layout_constraintVertical_bias="0.375"
         app:srcCompat="@drawable/logosecond" />
 
     <ImageView
@@ -24,10 +25,10 @@
         android:layout_height="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.886"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647"
+        app:layout_constraintVertical_bias="0.613"
         app:srcCompat="@drawable/lname" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
