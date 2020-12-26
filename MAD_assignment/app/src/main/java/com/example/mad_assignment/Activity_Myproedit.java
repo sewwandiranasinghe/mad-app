@@ -11,4 +11,7 @@ public class Activity_Myproedit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__myproedit);
     }
+    public void getUserName(){
+        
+    }
 }
