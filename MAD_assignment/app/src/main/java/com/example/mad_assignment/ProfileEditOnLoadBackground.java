@@ -3,8 +3,12 @@ package com.example.mad_assignment;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
+import android.widget.EditText;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -15,24 +19,23 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.sql.SQLException;
 
-public class Activity_Login_Background extends AsyncTask<String, Void, String> {
+public class ProfileEditOnLoadBackground extends AsyncTask<String, Void, String> {
     Context context;
+    EditText phoneNumbertx, userNametx;
     ProgressDialog progressDialog;
     AlertDialog alertDialog;
 
-    Activity_Login_Background(){}
-
-    Activity_Login_Background(Context context){
-        this.context= context;
+    ProfileEditOnLoadBackground(){}
+    ProfileEditOnLoadBackground(Context context, EditText phoneNumber, EditText userName) {
+        this.context=context;
+        this.phoneNumbertx = phoneNumber;
+        this.userNametx = userName;
     }
-
-
 
     @Override
     protected void onPreExecute() {
-//        super.onPreExecute();
+       // super.onPreExecute();
         progressDialog = ProgressDialog.show(context, "Loading","Please wait");
         progressDialog.setTitle("Login");
 
@@ -42,32 +45,43 @@ public class Activity_Login_Background extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPostExecute(String result) {
-//        super.onPostExecute(s);
+       // super.onPostExecute(s);
         System.out.println(result);
         progressDialog.dismiss();
-        if(result.equals("login success")){
-            Intent i = new Intent(context,Activity_Myproedit.class);
-            context.startActivity(i);
-        }
-        else{
-            alertDialog.setMessage(result);
-            alertDialog.show();;
-        }
+        loadIntodata(result);
     }
 
-    String phoneNumber;
-    String password;
+    private void loadIntodata(String json) {
+        try{
+            JSONArray jsonArray = new JSONArray(json);
+            String[] phone = new String[jsonArray.length()];
+            String[] name = new String[jsonArray.length()];
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject obj = jsonArray.getJSONObject(i);
+                phone[i] = obj.getString("phone_no");
+                name[i]= obj.getString("fullname");
+
+            }
+            System.out.println(phone[0].toString());
+            phoneNumbertx.setText(phone[0].toString());
+            userNametx.setText(name[0].toString());
+//            nametx.setText(name[0].toString());
+//            emailtx.setText(email[0].toString());
+//            phonenumbertx.setText(phonenumber[0].toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }}
 
     @Override
     protected String doInBackground(String... strings) {
-        //
-        phoneNumber = strings[0];
-        password = strings[1];
+        System.out.println(phoneNumbertx.getText());
+        String phoneNumber = strings[0];
+        String password = strings[1];
         String result = "";
         //
         try {
             //Connection to the php setup
-            String LOGIN_URL = "http://192.168.42.2/testapp/userlogin.php";
+            String LOGIN_URL = "http://192.168.42.2/testapp/useronloaddata.php";
             URL url = new URL(LOGIN_URL);
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setRequestMethod("POST");
