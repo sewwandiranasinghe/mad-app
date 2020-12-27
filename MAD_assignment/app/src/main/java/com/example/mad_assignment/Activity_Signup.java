@@ -11,7 +11,7 @@ import android.widget.EditText;
 
 public class Activity_Signup extends AppCompatActivity {
 
-    private EditText fullnametx,addresstx,mobilenotx,passtx;
+    private EditText fullnametx,addresstx,mobilenotx,passtx,bikenametx,bikemodeltx,registrationnotx;
 
 
 
@@ -26,6 +26,9 @@ public class Activity_Signup extends AppCompatActivity {
         addresstx = (EditText) findViewById(R.id.addresstx);
         mobilenotx = (EditText) findViewById(R.id.mobilenotx);
         passtx = (EditText) findViewById(R.id.passtx);
+        bikenametx = (EditText) findViewById(R.id.bikenametx);
+        bikemodeltx = (EditText) findViewById(R.id.bikemodeltx);
+       registrationnotx = (EditText) findViewById(R.id.registrationnotx);
 
 
 
@@ -46,6 +49,9 @@ public class Activity_Signup extends AppCompatActivity {
         String fullname = fullnametx.getText().toString().trim();
         String address = addresstx.getText().toString().trim();
         String MobileNo = mobilenotx.getText().toString().trim();
+        String BikeName = bikenametx.getText().toString().trim();
+        String BikeModel = bikemodeltx.getText().toString().trim();
+        String RegistrationNo = registrationnotx.getText().toString().trim();
 
 
         String password = passtx.getText().toString().trim();
@@ -61,6 +67,9 @@ public class Activity_Signup extends AppCompatActivity {
             fullnametx.setError("Name",warning);
             addresstx.setError("Email",warning);
             mobilenotx.setError("Phone Number",warning);
+            bikenametx.setError("BikeName",warning);
+            bikemodeltx.setError("BikeModel",warning);
+            registrationnotx.setError("RegistrationNo",warning);
 
             passtx.setError("Password",warning);
 
@@ -73,7 +82,12 @@ public class Activity_Signup extends AppCompatActivity {
 
         } else if (TextUtils.isEmpty(password)) {
             passtx.setError("Enter Password",warning);
-
+        } else if (TextUtils.isEmpty(BikeName)) {
+            bikenametx.setError("Enter BikeName",warning);
+        } else if (TextUtils.isEmpty(BikeModel)) {
+            bikemodeltx.setError("Enter BikeModel",warning);
+        } else if (TextUtils.isEmpty(RegistrationNo)) {
+           registrationnotx.setError("Enter RegistrationNo",warning);
 
 
 //            Activity_Signup_Background activity_signup_background  = new activity_signup_background(this);

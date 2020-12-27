@@ -37,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/bikename"
+        android:id="@+id/bikenametx"
         android:layout_width="336dp"
         android:layout_height="43dp"
         android:layout_marginBottom="372dp"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/bikrmodel"
+        android:id="@+id/bikemodeltx"
         android:layout_width="336dp"
         android:layout_height="43dp"
         android:layout_marginBottom="320dp"
@@ -67,7 +67,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/registrationno"
+        android:id="@+id/registrationnotx"
         android:layout_width="336dp"
         android:layout_height="43dp"
         android:layout_marginBottom="268dp"

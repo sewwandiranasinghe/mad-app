@@ -40,7 +40,11 @@ public class Activity_Signup_Background extends AsyncTask<String, Void, String> 
         String fullname=strings[0];
         String address=strings[1];
         String MobileNo=strings[2];
-        String password=strings[3];
+        String BikeName=strings[3];
+        String BikeModel=strings[4];
+        String RegistrationNo=strings[5];
+
+        String password=strings[6];
 
         String result="";
 
@@ -58,6 +62,9 @@ public class Activity_Signup_Background extends AsyncTask<String, Void, String> 
                         + URLEncoder.encode("address", "UTF-8") + "=" + URLEncoder.encode(address, "UTF-8") + "&&"
                         + URLEncoder.encode("MobileNo", "UTF-8") + "=" + URLEncoder.encode(MobileNo, "UTF-8") + "&&"
                         + URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8") + "&&"
+                        + URLEncoder.encode("BikeName", "UTF-8") + "=" + URLEncoder.encode(BikeName, "UTF-8") + "&&"
+                        + URLEncoder.encode("BikeModel", "UTF-8") + "=" + URLEncoder.encode(BikeModel, "UTF-8") + "&&"
+                        + URLEncoder.encode("RegistrationNo", "UTF-8") + "=" + URLEncoder.encode(RegistrationNo, "UTF-8") + "&&"
                        ;
 
                 bufferedWriter.write(data);
