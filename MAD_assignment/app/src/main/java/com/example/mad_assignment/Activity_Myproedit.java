@@ -19,6 +19,7 @@ public class Activity_Myproedit extends AppCompatActivity {
         bikemodeltx= (EditText) findViewById(R.id.editTextbikemodel);
        regnotx= (EditText) findViewById(R.id.editTextregnum);
 
+
 //        Activity_Login_Background loginback = new Activity_Login_Background();
 //        String phone = loginback.phoneNumber;
 //        String password = loginback.password;

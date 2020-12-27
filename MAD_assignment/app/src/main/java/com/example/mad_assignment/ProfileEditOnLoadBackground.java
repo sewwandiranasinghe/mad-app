@@ -36,6 +36,7 @@ public class ProfileEditOnLoadBackground extends AsyncTask<String, Void, String>
         this.bikemodeltx=bikeModel;
         this.regnotx=regNo;
 
+
     }
 
     @Override
@@ -65,6 +66,7 @@ public class ProfileEditOnLoadBackground extends AsyncTask<String, Void, String>
             String[] bikeName = new String[jsonArray.length()];
             String[] bikemodel = new String[jsonArray.length()];
             String[] regno = new String[jsonArray.length()];
+
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject obj = jsonArray.getJSONObject(i);
                 phone[i] = obj.getString("phone_no");
@@ -74,6 +76,7 @@ public class ProfileEditOnLoadBackground extends AsyncTask<String, Void, String>
                 bikemodel[i]= obj.getString("bikemodel");
                 regno[i]= obj.getString("regno");
 
+
             }
             System.out.println(phone[0].toString());
             phoneNumbertx.setText(phone[0].toString());
@@ -82,6 +85,7 @@ public class ProfileEditOnLoadBackground extends AsyncTask<String, Void, String>
             bikenametx.setText(name[0].toString());
             bikemodeltx.setText(name[0].toString());
             regnotx.setText(name[0].toString());
+
 
 //            nametx.setText(name[0].toString());
 //            emailtx.setText(email[0].toString());
