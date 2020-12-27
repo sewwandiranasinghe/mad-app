@@ -22,17 +22,20 @@ import java.net.URLEncoder;
 
 public class ProfileEditOnLoadBackground extends AsyncTask<String, Void, String> {
     Context context;
-    EditText phoneNumbertx, userNametx,addresstx,bikenametx;
+    EditText phoneNumbertx, userNametx,addresstx,bikenametx,bikemodeltx,regnotx;
     ProgressDialog progressDialog;
     AlertDialog alertDialog;
 
-    ProfileEditOnLoadBackground(Activity_Myproedit activity_myproedit, EditText phoneNumbertx, EditText userNametx, EditText addresstx,EditText bikenametx){}
-    ProfileEditOnLoadBackground(Context context, EditText phoneNumber, EditText userName,EditText address,EditText bikeName) {
+    ProfileEditOnLoadBackground(Activity_Myproedit activity_myproedit, EditText phoneNumbertx, EditText userNametx, EditText addresstx,EditText bikenametx,EditText bikemodeltx,EditText regnotx){}
+    ProfileEditOnLoadBackground(Context context, EditText phoneNumber, EditText userName,EditText address,EditText bikeName,EditText bikeModel,EditText regNo) {
         this.context=context;
         this.phoneNumbertx = phoneNumber;
         this.userNametx = userName;
         this.addresstx=address;
         this.bikenametx=bikeName;
+        this.bikemodeltx=bikeModel;
+        this.regnotx=regNo;
+
     }
 
     @Override
@@ -60,12 +63,16 @@ public class ProfileEditOnLoadBackground extends AsyncTask<String, Void, String>
             String[] name = new String[jsonArray.length()];
             String[] address = new String[jsonArray.length()];
             String[] bikeName = new String[jsonArray.length()];
+            String[] bikemodel = new String[jsonArray.length()];
+            String[] regno = new String[jsonArray.length()];
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject obj = jsonArray.getJSONObject(i);
                 phone[i] = obj.getString("phone_no");
                 name[i]= obj.getString("fullName");
                 address[i]= obj.getString("address");
                 bikeName[i]= obj.getString("bikeName");
+                bikemodel[i]= obj.getString("bikemodel");
+                regno[i]= obj.getString("regno");
 
             }
             System.out.println(phone[0].toString());
@@ -73,6 +80,8 @@ public class ProfileEditOnLoadBackground extends AsyncTask<String, Void, String>
             userNametx.setText(name[0].toString());
             addresstx.setText(name[0].toString());
             bikenametx.setText(name[0].toString());
+            bikemodeltx.setText(name[0].toString());
+            regnotx.setText(name[0].toString());
 
 //            nametx.setText(name[0].toString());
 //            emailtx.setText(email[0].toString());
