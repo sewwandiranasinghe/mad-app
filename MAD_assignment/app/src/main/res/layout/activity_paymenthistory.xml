@@ -88,7 +88,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextvehiclenumber3"
+        android:id="@+id/order2"
         android:layout_width="135dp"
         android:layout_height="49dp"
         android:ems="10"
@@ -149,7 +149,7 @@
         app:layout_constraintVertical_bias="0.226" />
 
     <EditText
-        android:id="@+id/editTextTextvehicle4"
+        android:id="@+id/order3"
         android:layout_width="135dp"
         android:layout_height="49dp"
         android:ems="10"
@@ -162,7 +162,7 @@
         app:layout_constraintVertical_bias="0.703" />
 
     <EditText
-        android:id="@+id/editTextTextdiscount"
+        android:id="@+id/order1price"
         android:layout_width="135dp"
         android:layout_height="49dp"
         android:ems="10"
@@ -188,7 +188,7 @@
         app:layout_constraintVertical_bias="0.872" />
 
     <EditText
-        android:id="@+id/editTextTextoutstandingamount"
+        android:id="@+id/order6"
         android:layout_width="135dp"
         android:layout_height="49dp"
         android:ems="10"
@@ -214,7 +214,7 @@
         app:layout_constraintVertical_bias="0.944" />
 
     <EditText
-        android:id="@+id/editTextTextamountpayble"
+        android:id="@+id/order5"
         android:layout_width="135dp"
         android:layout_height="49dp"
         android:ems="10"
@@ -240,7 +240,7 @@
         app:layout_constraintVertical_bias="0.814" />
 
     <EditText
-        android:id="@+id/editTextTextdate"
+        android:id="@+id/order1"
         android:layout_width="135dp"
         android:layout_height="49dp"
         android:ems="10"
@@ -253,7 +253,7 @@
         app:layout_constraintVertical_bias="0.283" />
 
     <EditText
-        android:id="@+id/editTextdate2"
+        android:id="@+id/order4"
         android:layout_width="135dp"
         android:layout_height="49dp"
         android:ems="10"
