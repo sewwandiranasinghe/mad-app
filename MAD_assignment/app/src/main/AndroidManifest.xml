@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_Forgotpass"></activity>
+        <activity android:name=".Activity_Creditdebitcard"></activity>
+        <activity android:name=".Activity_Forgotpass" />
         <activity android:name=".Activity_Licencereview" />
         <activity android:name=".Activity_Myproedit" />
         <activity android:name=".Activity_Easy" />
