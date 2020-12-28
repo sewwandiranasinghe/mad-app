@@ -302,6 +302,7 @@
         android:background="@drawable/custom_button"
         android:fontFamily="@font/roboto_black"
         android:text="Book Service"
+        android:onClick="bookbutton"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
