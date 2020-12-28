@@ -35,7 +35,7 @@ public class Activity_Easy extends AppCompatActivity {
     }
 
     public void ordersparebutton(View view) {
-        Intent intent = new Intent(Activity_Easy.this, Activity_Billingdetails.class);
+        Intent intent = new Intent(Activity_Easy.this, Activity_Orders.class);
         startActivity(intent);
 
     }
@@ -46,7 +46,7 @@ public class Activity_Easy extends AppCompatActivity {
     }
 
     public void paymentorderbutton(View view) {
-        Intent intent = new Intent(Activity_Easy.this, Activity_Billingdetails.class);
+        Intent intent = new Intent(Activity_Easy.this, Activity_Payorders.class);
         startActivity(intent);
     }
 
