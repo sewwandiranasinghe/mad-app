@@ -32,6 +32,10 @@ public class Activity_Services extends AppCompatActivity {
         mpaint=findViewById(R.id.paint);
         mrecoveryservices=findViewById(R.id.recovery_service);
 
+
+
+
+
         moilchange.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
