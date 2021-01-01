@@ -14,6 +14,11 @@ public class Activity_Paymentsummary extends AppCompatActivity {
         setContentView(R.layout.activity_paymentsummary);
     }
 
+    public void creditpaybutton(View view) {
+        Intent intent = new Intent(Activity_Paymentsummary.this, Activity_Paymentsummary_Cash.class);
+        startActivity(intent);
+    }
+
     public void cashpaybutton(View view) {
         Intent intent = new Intent(Activity_Paymentsummary.this, Activity_Paymentsummary_Cash.class);
         startActivity(intent);
