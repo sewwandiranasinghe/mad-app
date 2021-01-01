@@ -19,8 +19,7 @@ public class Activity_Orders extends AppCompatActivity {
         setContentView(R.layout.activity_orders);
 
         nbuzzer=findViewById(R.id.buzzer);
-      ncrashguard=findViewById(R.id.crashguard);
-
+        ncrashguard=findViewById(R.id.crashguard);
         nengineguard=findViewById(R.id.enginneguard);
         nfrontlinerbox=findViewById(R.id.frontliner);
         ngearlever=findViewById(R.id.gearlever);
@@ -88,6 +87,117 @@ public class Activity_Orders extends AppCompatActivity {
                     nResult.add("Gear lever");
                 else
                     nResult.remove("Gear lever");
+
+            }
+
+        });
+        nhandgrip.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (nhandgrip.isChecked())
+                    nResult.add("Hand grip");
+                else
+                    nResult.remove("Hand grip");
+
+            }
+
+        });
+        nhelmetlock.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (nhelmetlock.isChecked())
+                    nResult.add("Helmet lock");
+                else
+                    nResult.remove("Helmet lock");
+
+            }
+
+        });
+        nhelmet.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (nhelmet.isChecked())
+                    nResult.add("Helmet ");
+                else
+                    nResult.remove("Helmet ");
+
+            }
+
+        });
+        nnumberplatecover.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (nnumberplatecover.isChecked())
+                    nResult.add("Number plate cover");
+                else
+                    nResult.remove("Number plate cover");
+
+            }
+
+        });
+        npillionholder.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (npillionholder.isChecked())
+                    nResult.add("pillion holder");
+                else
+                    nResult.remove("pillion holder");
+
+            }
+
+        });
+        nseatcover.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (nseatcover.isChecked())
+                    nResult.add("seat cover");
+                else
+                    nResult.remove("seat cover");
+
+            }
+
+        });
+      ntankcover.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (ntankcover.isChecked())
+                    nResult.add("Tank cover");
+                else
+                    nResult.remove("Tank cover");
+
+            }
+
+        });
+        nbrakepads.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (nbrakepads.isChecked())
+                    nResult.add("Brake pad");
+                else
+                    nResult.remove("Brake pad");
+
+            }
+
+        });
+
+        nsignallightcup.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (nsignallightcup.isChecked())
+                    nResult.add("Signal light Cup");
+                else
+                    nResult.remove("Signal light Cup");
+
+            }
+
+        });
+        nheadlight.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if (nheadlight.isChecked())
+                    nResult.add("Head light");
+                else
+                    nResult.remove("Head light");
 
             }
 
