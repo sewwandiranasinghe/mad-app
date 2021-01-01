@@ -305,7 +305,7 @@
 
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/buzzer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -317,7 +317,7 @@
         app:layout_constraintVertical_bias="0.224" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/crashguard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -329,7 +329,7 @@
         app:layout_constraintVertical_bias="0.271" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/enginneguard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -341,7 +341,7 @@
         app:layout_constraintVertical_bias="0.317" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/frontliner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -353,7 +353,7 @@
         app:layout_constraintVertical_bias="0.363" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/gearlever"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -365,7 +365,7 @@
         app:layout_constraintVertical_bias="0.409" />
 
     <CheckBox
-        android:id="@+id/checkBox8"
+        android:id="@+id/handgrip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -377,7 +377,7 @@
         app:layout_constraintVertical_bias="0.452" />
 
     <CheckBox
-        android:id="@+id/checkBox9"
+        android:id="@+id/helmetlock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -389,7 +389,7 @@
         app:layout_constraintVertical_bias="0.496" />
 
     <CheckBox
-        android:id="@+id/checkBox10"
+        android:id="@+id/helmet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -401,7 +401,7 @@
         app:layout_constraintVertical_bias="0.547" />
 
     <CheckBox
-        android:id="@+id/checkBox11"
+        android:id="@+id/numberplate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -413,7 +413,7 @@
         app:layout_constraintVertical_bias="0.599" />
 
     <CheckBox
-        android:id="@+id/checkBox12"
+        android:id="@+id/pillionholder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -425,7 +425,7 @@
         app:layout_constraintVertical_bias="0.645" />
 
     <CheckBox
-        android:id="@+id/checkBox13"
+        android:id="@+id/seatcover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -437,7 +437,7 @@
         app:layout_constraintVertical_bias="0.687" />
 
     <CheckBox
-        android:id="@+id/checkBox14"
+        android:id="@+id/tankcover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -449,7 +449,7 @@
         app:layout_constraintVertical_bias="0.738" />
 
     <CheckBox
-        android:id="@+id/checkBox15"
+        android:id="@+id/brakepad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -461,7 +461,7 @@
         app:layout_constraintVertical_bias="0.787" />
 
     <CheckBox
-        android:id="@+id/checkBox16"
+        android:id="@+id/signallightcup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
@@ -473,7 +473,7 @@
         app:layout_constraintVertical_bias="0.838" />
 
     <CheckBox
-        android:id="@+id/checkBox17"
+        android:id="@+id/headlight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/fontblack2"
