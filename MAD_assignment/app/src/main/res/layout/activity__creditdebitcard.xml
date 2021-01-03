@@ -38,7 +38,7 @@
     <TextView
         android:id="@+id/textView91"
         android:layout_width="380dp"
-        android:layout_height="500dp"
+        android:layout_height="480dp"
         android:background="@drawable/table_radius"
         android:fontFamily="@font/roboto_bold"
         android:textColor="@color/colorPrimary"

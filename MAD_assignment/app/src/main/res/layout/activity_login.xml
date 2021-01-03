@@ -135,10 +135,10 @@
         android:id="@+id/imageView10"
         android:layout_width="417dp"
         android:layout_height="359dp"
-        android:layout_marginBottom="420dp"
+        android:layout_marginBottom="380dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/bc" />
 
@@ -146,10 +146,10 @@
         android:id="@+id/imageView11"
         android:layout_width="411dp"
         android:layout_height="256dp"
-        android:layout_marginBottom="496dp"
+        android:layout_marginBottom="468dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:srcCompat="@drawable/w3" />
 

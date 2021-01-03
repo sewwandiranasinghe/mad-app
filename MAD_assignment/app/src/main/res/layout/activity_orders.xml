@@ -12,13 +12,13 @@
         android:id="@+id/textView44"
         android:layout_width="720dp"
         android:layout_height="660dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="96dp"
         android:background="@drawable/table_radius4"
         android:fontFamily="@font/roboto_bold"
         android:textColor="@color/fontblack2"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

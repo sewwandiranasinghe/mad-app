@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintVertical_bias="0.054" />
 
     <EditText
         android:id="@+id/fullnametx"
@@ -129,14 +129,14 @@
         android:id="@+id/textView"
         android:layout_width="335dp"
         android:layout_height="67dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="104dp"
         android:fontFamily="@font/roboto_black"
         android:text="By clicking sign up,you agree to our terms and Data Policy.You may receive SMS notifications from us and can opt. out at anytime.       "
         android:textColor="@color/fontblack2"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
